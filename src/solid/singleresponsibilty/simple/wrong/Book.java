@@ -26,6 +26,7 @@ public class Book {
             String insertString = "Insert into t_book(id,name,authoer)" +
                     "values(" + id + "," + name + "," + author;
             PreparedStatement preparedStatement = connection.prepareStatement(insertString);
+            preparedStatement.execute();
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }

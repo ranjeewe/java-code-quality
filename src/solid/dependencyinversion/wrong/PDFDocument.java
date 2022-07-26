@@ -1,11 +1,13 @@
 package solid.dependencyinversion.wrong;
 
-public class PDFDocument {
+import solid.liskovsubstitution.Document;
+
+public class PDFDocument extends Document {
     private int id;
     private byte[] payload;
 
-    public PDFDocument(){
-
+    public PDFDocument(int id, byte[] payload) {
+        super(id, "", "", payload);
     }
 
     public int getId() {

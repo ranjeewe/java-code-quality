@@ -1,7 +1,5 @@
 package solid.interfacesegregation.correct;
 
-import solid.interfacesegregation.correct.Bird;
-
 public class Duck implements Bird {
 
     @Override

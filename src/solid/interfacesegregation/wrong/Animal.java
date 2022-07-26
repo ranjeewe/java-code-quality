@@ -6,5 +6,5 @@ public interface Animal {
 
     void run();
 
-    void  fly();
+    void fly();
 }

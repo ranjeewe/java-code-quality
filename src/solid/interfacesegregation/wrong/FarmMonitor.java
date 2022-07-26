@@ -1,8 +1,5 @@
 package solid.interfacesegregation.wrong;
 
-import solid.interfacesegregation.wrong.Cat;
-import solid.interfacesegregation.wrong.Duck;
-
 public class FarmMonitor {
     public static void main(String[] args) {
         Cat cat = new Cat();

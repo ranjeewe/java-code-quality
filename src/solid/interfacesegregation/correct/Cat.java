@@ -1,7 +1,5 @@
 package solid.interfacesegregation.correct;
 
-import solid.interfacesegregation.correct.Animal;
-
 public class Cat implements Animal {
 
     @Override

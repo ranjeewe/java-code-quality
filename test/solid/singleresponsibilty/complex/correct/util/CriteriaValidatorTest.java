@@ -9,7 +9,7 @@ import static org.junit.Assert.assertEquals;
 
 public class CriteriaValidatorTest {
     @Test
-    public void testDisplayStudentName() {
+    public void testWhetherValidationOfFromDateComesBeforeToDate() {
         LocalDate fromDate = LocalDate.of(2022, 12, 12);
         LocalDate toDate = LocalDate.of(2022, 12, 14);
         BookingCriteria criteria = new BookingCriteria(fromDate, toDate, 1, 0, 0);
@@ -17,7 +17,7 @@ public class CriteriaValidatorTest {
         assertEquals(validationResult, true);
     }
 
-    @Test
+    /*@Test
     public void testDisplayStudentName1() {
         LocalDate fromDate = LocalDate.of(2022, 12, 12);
         LocalDate toDate = LocalDate.of(2022, 12, 14);
@@ -33,5 +33,5 @@ public class CriteriaValidatorTest {
         BookingCriteria criteria = new BookingCriteria(fromDate, toDate, 1, 0, 0);
         boolean validationResult = CriteriaValidator.validateCriteria(criteria);
         assertEquals(validationResult, true);
-    }
+    }*/
 }

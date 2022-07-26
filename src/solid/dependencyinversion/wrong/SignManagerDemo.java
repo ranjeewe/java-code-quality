@@ -6,7 +6,7 @@ public class SignManagerDemo {
 
     public static void main(String[] args) {
         SignManager signManager = new SignManager();
-        signManager.sign(new PDFDocument());
+        signManager.sign(new PDFDocument(1, null));
 
         Document document = new Document();
         System.out.println(document);
